@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Module 1-number_of_lines.
+"""Module 1-write_file.
 Counts number of lines in a file.
 """
 
