@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Module 12-student.
+"""Module 12-pascal_triangle.
 Creates a Student class.
 """
 
