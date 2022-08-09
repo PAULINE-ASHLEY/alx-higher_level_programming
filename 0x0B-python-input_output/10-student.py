@@ -1,17 +1,32 @@
 #!/usr/bin/python3
-"""Module 10-student.
-Returns the dictionary description with
-simple data structure (list, dictionary,
-string, integer and boolean)
-for JSON serialization of an object.
+""" Module that defines the class Student
 """
 
 
-def class_to_json(obj):
-    """Creates a dict description of obj.
-    Args:
-        - obj: object to serialize
-    Returns: dictionnary description of obj
-    """
+class Student:
+    """ Class to create student instances """
 
-    return obj.__dict__
+    def __init__(self, first_name, last_name, age):
+        """ Special method to initialize """
+        self.first_name = first_name
+        self.last_name = last_name
+        self.age = age
+
+    def to_json(self, attrs=None):
+        """ Method that returns directory description """
+        obj = self.__dict__.copy()
+        if type(attrs) is list:
+
+            for item in attrs:
+                if type(item) is not str:
+                    return obj
+
+            d_list = {}
+
+            for iatr in range(len(attrs)):
+                for satr in obj:
+                    if attrs[iatr] == satr:
+                        d_list[satr] = obj[satr]
+            return d_list
+
+        return obj
