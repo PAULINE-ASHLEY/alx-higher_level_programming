@@ -1,9 +1,9 @@
 #!/usr/bin/node
 
-const num = 'C is fun';
-const num1 = 'Python is cool';
-const num2 = 'Javascript is amazing';
+const firstLanguage = 'C is fun';
+const secondLanguage = 'Python is cool';
+const thirdLanguage = 'Javascript is amazing';
 
-console.log(num);
-console.log(num1);
-console.log(num2);
+console.log(firstLanguage);
+console.log(secondLanguage);
+console.log(thirdLanguage);
