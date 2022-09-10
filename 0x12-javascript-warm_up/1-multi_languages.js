@@ -2,7 +2,7 @@
 
 const firstLanguage = 'C is fun';
 const secondLanguage = 'Python is cool';
-const thirdLanguage = 'Javascript is amazing';
+const thirdLanguage = 'JavaScript is amazing';
 
 console.log(firstLanguage);
 console.log(secondLanguage);
